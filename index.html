@@ -8,24 +8,24 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --primary: #FF6B35;
-  --primary-dark: #E8522A;
-  --primary-light: #FF8C5A;
-  --bg: #0D0D0D;
-  --card: #1A1A1A;
-  --text: #F0F0F0;
-  --text-2: #AAAAAA;
-  --text-3: #666;
-  --border: #2E2E2E;
+  --primary: #E8523A;
+  --primary-dark: #C43E28;
+  --primary-light: #FF6B35;
+  --bg: #F7F8FA;
+  --card: #FFFFFF;
+  --text: #1A1A1A;
+  --text-2: #555;
+  --text-3: #999;
+  --border: #E5E7EB;
   --success: #22C55E;
   --danger: #EF4444;
   --warning: #F59E0B;
   --radius-sm: 8px;
   --radius: 12px;
   --radius-lg: 16px;
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.4);
-  --shadow: 0 4px 16px rgba(0,0,0,0.5);
-  --shadow-lg: 0 8px 32px rgba(0,0,0,0.6);
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+  --shadow: 0 4px 16px rgba(0,0,0,0.1);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.15);
   --transition: all 0.2s ease;
 }
 
@@ -207,7 +207,7 @@ header {
 .product-thumb {
   width: 100%;
   aspect-ratio: 4/3;
-  background: linear-gradient(135deg, #222, #1a1a1a);
+  background: linear-gradient(135deg, #f0f0f0, #e5e5e5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -300,7 +300,7 @@ header {
   width: 76px;
   height: 76px;
   border-radius: var(--radius-sm);
-  background: linear-gradient(135deg, #222, #1a1a1a);
+  background: linear-gradient(135deg, #f0f0f0, #e5e5e5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -447,16 +447,16 @@ input:focus, select:focus, textarea:focus {
 
 /* ── Bank Transfer ── */
 .bank-info {
-  background: #0f2318;
-  border: 1px solid #1f4d31;
+  background: #F0FAF4;
+  border: 1px solid #86EFAC;
   border-radius: var(--radius);
   padding: 18px;
   margin-bottom: 16px;
 }
-.bank-info h3 { color: #4ade80; font-size: 15px; margin-bottom: 12px; }
-.bank-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #1f4d31; font-size: 14px; }
+.bank-info h3 { color: #166534; font-size: 15px; margin-bottom: 12px; }
+.bank-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #BBF7D0; font-size: 14px; }
 .bank-row:last-child { border-bottom: none; }
-.bank-row .val { font-weight: 700; font-family: monospace; color: #4ade80; font-size: 15px; letter-spacing: 1px; }
+.bank-row .val { font-weight: 700; font-family: monospace; color: #166534; font-size: 15px; letter-spacing: 1px; }
 
 /* ── Review ── */
 .review-section { background: var(--bg); border-radius: var(--radius); padding: 16px; margin-bottom: 14px; }
@@ -539,9 +539,9 @@ input:focus, select:focus, textarea:focus {
 .admin-prod-meta { font-size: 12px; color: var(--text-3); }
 
 .badge { display: inline-flex; align-items: center; padding: 3px 10px; border-radius: 20px; font-size: 12px; font-weight: 600; }
-.badge-success { background: #0f2318; color: #4ade80; }
-.badge-danger { background: #2a0a0a; color: #f87171; }
-.badge-warning { background: #1f1500; color: #FCD34D; }
+.badge-success { background: #DCFCE7; color: #166534; }
+.badge-danger { background: #FEE2E2; color: #991B1B; }
+.badge-warning { background: #FEF3C7; color: #92400E; }
 
 /* ── Toggle ── */
 .toggle { position: relative; display: inline-block; width: 42px; height: 23px; }
@@ -567,21 +567,21 @@ input:focus, select:focus, textarea:focus {
 
 /* ── Info Box ── */
 .info-box {
-  background: #0f1a2e;
-  border: 1px solid #1e3a6e;
+  background: #EFF6FF;
+  border: 1px solid #BFDBFE;
   border-radius: var(--radius-sm);
   padding: 11px 14px;
   font-size: 13px;
-  color: #93C5FD;
+  color: #1E40AF;
   margin-bottom: 16px;
 }
 .warning-box {
-  background: #1f1500;
-  border: 1px solid #4d3800;
+  background: #FFFBEB;
+  border: 1px solid #FDE68A;
   border-radius: var(--radius-sm);
   padding: 11px 14px;
   font-size: 13px;
-  color: #FCD34D;
+  color: #92400E;
   margin-bottom: 16px;
 }
 
@@ -638,15 +638,15 @@ input:focus, select:focus, textarea:focus {
 .qty-sel input { width: 60px; text-align: center; padding: 8px; }
 
 .how-to-order {
-  background: #1a1200;
-  border: 1px solid #3d2e00;
+  background: linear-gradient(135deg, #FFF7ED, #FEF3C7);
+  border: 1px solid #FDE68A;
   border-radius: var(--radius);
   padding: 18px;
   margin-bottom: 20px;
 }
-.how-to-order h4 { font-size: 14px; color: #FCD34D; margin-bottom: 10px; }
+.how-to-order h4 { font-size: 14px; color: #92400E; margin-bottom: 10px; }
 .how-steps { display: flex; gap: 8px; flex-wrap: wrap; }
-.how-step { display: flex; align-items: center; gap: 6px; font-size: 13px; color: #FCD34D; }
+.how-step { display: flex; align-items: center; gap: 6px; font-size: 13px; color: #92400E; }
 .how-step .n {
   width: 22px;
   height: 22px;
@@ -875,7 +875,7 @@ function showProductModal(pid) {
         <button class="modal-close" onclick="closeModal()">✕</button>
       </div>
       <div class="modal-body">
-        <div style="width:100%;aspect-ratio:16/9;background:#222;border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;margin-bottom:14px;overflow:hidden;font-size:80px">
+        <div style="width:100%;aspect-ratio:16/9;background:#f0f0f0;border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;margin-bottom:14px;overflow:hidden;font-size:80px">
           ${thumbHtml(p, '80px')}
         </div>
         <span class="category-tag">${escHtml(p.category)}</span>
@@ -1320,7 +1320,7 @@ function renderAdmin() {
             <img id="img-pre" style="display:none;max-width:180px;margin-top:8px;border-radius:var(--radius-sm)" onerror="this.style.display='none'" onload="this.style.display='block'">
           </div>
           <div class="divider"></div>
-          <div style="background:#0f2318;border:1px solid #1f4d31;border-radius:var(--radius-sm);padding:14px;margin-bottom:18px;font-size:13px;color:#4ade80">
+          <div style="background:#F0FDF4;border:1px solid #86EFAC;border-radius:var(--radius-sm);padding:14px;margin-bottom:18px;font-size:13px;color:#166534">
             <strong>📝 上架步驟說明</strong>
             <ol style="margin-top:8px;padding-left:18px;line-height:2.2">
               <li>填寫商品名稱、售價、庫存（必填）</li>

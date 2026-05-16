@@ -3,29 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>阿湯賣場</title>
+<title>Cindy賣場</title>
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --primary: #E8523A;
-  --primary-dark: #C43E28;
-  --primary-light: #FF6B35;
-  --bg: #F7F8FA;
-  --card: #FFFFFF;
-  --text: #1A1A1A;
-  --text-2: #555;
-  --text-3: #999;
-  --border: #E5E7EB;
+  --primary: #FF6B35;
+  --primary-dark: #E8522A;
+  --primary-light: #FF8C5A;
+  --bg: #0D0D0D;
+  --card: #1A1A1A;
+  --text: #F0F0F0;
+  --text-2: #AAAAAA;
+  --text-3: #666;
+  --border: #2E2E2E;
   --success: #22C55E;
   --danger: #EF4444;
   --warning: #F59E0B;
   --radius-sm: 8px;
   --radius: 12px;
   --radius-lg: 16px;
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
-  --shadow: 0 4px 16px rgba(0,0,0,0.1);
-  --shadow-lg: 0 8px 32px rgba(0,0,0,0.15);
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.4);
+  --shadow: 0 4px 16px rgba(0,0,0,0.5);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.6);
   --transition: all 0.2s ease;
 }
 
@@ -207,7 +207,7 @@ header {
 .product-thumb {
   width: 100%;
   aspect-ratio: 4/3;
-  background: linear-gradient(135deg, #f0f0f0, #e5e5e5);
+  background: linear-gradient(135deg, #222, #1a1a1a);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -300,7 +300,7 @@ header {
   width: 76px;
   height: 76px;
   border-radius: var(--radius-sm);
-  background: linear-gradient(135deg, #f0f0f0, #e5e5e5);
+  background: linear-gradient(135deg, #222, #1a1a1a);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -447,16 +447,16 @@ input:focus, select:focus, textarea:focus {
 
 /* ── Bank Transfer ── */
 .bank-info {
-  background: #F0FAF4;
-  border: 1px solid #86EFAC;
+  background: #0f2318;
+  border: 1px solid #1f4d31;
   border-radius: var(--radius);
   padding: 18px;
   margin-bottom: 16px;
 }
-.bank-info h3 { color: #166534; font-size: 15px; margin-bottom: 12px; }
-.bank-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #BBF7D0; font-size: 14px; }
+.bank-info h3 { color: #4ade80; font-size: 15px; margin-bottom: 12px; }
+.bank-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #1f4d31; font-size: 14px; }
 .bank-row:last-child { border-bottom: none; }
-.bank-row .val { font-weight: 700; font-family: monospace; color: #166534; font-size: 15px; letter-spacing: 1px; }
+.bank-row .val { font-weight: 700; font-family: monospace; color: #4ade80; font-size: 15px; letter-spacing: 1px; }
 
 /* ── Review ── */
 .review-section { background: var(--bg); border-radius: var(--radius); padding: 16px; margin-bottom: 14px; }
@@ -539,9 +539,9 @@ input:focus, select:focus, textarea:focus {
 .admin-prod-meta { font-size: 12px; color: var(--text-3); }
 
 .badge { display: inline-flex; align-items: center; padding: 3px 10px; border-radius: 20px; font-size: 12px; font-weight: 600; }
-.badge-success { background: #DCFCE7; color: #166534; }
-.badge-danger { background: #FEE2E2; color: #991B1B; }
-.badge-warning { background: #FEF3C7; color: #92400E; }
+.badge-success { background: #0f2318; color: #4ade80; }
+.badge-danger { background: #2a0a0a; color: #f87171; }
+.badge-warning { background: #1f1500; color: #FCD34D; }
 
 /* ── Toggle ── */
 .toggle { position: relative; display: inline-block; width: 42px; height: 23px; }
@@ -567,21 +567,21 @@ input:focus, select:focus, textarea:focus {
 
 /* ── Info Box ── */
 .info-box {
-  background: #EFF6FF;
-  border: 1px solid #BFDBFE;
+  background: #0f1a2e;
+  border: 1px solid #1e3a6e;
   border-radius: var(--radius-sm);
   padding: 11px 14px;
   font-size: 13px;
-  color: #1E40AF;
+  color: #93C5FD;
   margin-bottom: 16px;
 }
 .warning-box {
-  background: #FFFBEB;
-  border: 1px solid #FDE68A;
+  background: #1f1500;
+  border: 1px solid #4d3800;
   border-radius: var(--radius-sm);
   padding: 11px 14px;
   font-size: 13px;
-  color: #92400E;
+  color: #FCD34D;
   margin-bottom: 16px;
 }
 
@@ -638,15 +638,15 @@ input:focus, select:focus, textarea:focus {
 .qty-sel input { width: 60px; text-align: center; padding: 8px; }
 
 .how-to-order {
-  background: linear-gradient(135deg, #FFF7ED, #FEF3C7);
-  border: 1px solid #FDE68A;
+  background: #1a1200;
+  border: 1px solid #3d2e00;
   border-radius: var(--radius);
   padding: 18px;
   margin-bottom: 20px;
 }
-.how-to-order h4 { font-size: 14px; color: #92400E; margin-bottom: 10px; }
+.how-to-order h4 { font-size: 14px; color: #FCD34D; margin-bottom: 10px; }
 .how-steps { display: flex; gap: 8px; flex-wrap: wrap; }
-.how-step { display: flex; align-items: center; gap: 6px; font-size: 13px; color: #92400E; }
+.how-step { display: flex; align-items: center; gap: 6px; font-size: 13px; color: #FCD34D; }
 .how-step .n {
   width: 22px;
   height: 22px;
@@ -678,7 +678,7 @@ input:focus, select:focus, textarea:focus {
 
 <header>
   <div class="header-inner">
-    <button class="logo" onclick="go('store')">🛍️ 阿湯賣場</button>
+    <button class="logo" onclick="go('store')">🛍️ Cindy賣場</button>
     <div class="header-actions">
       <button class="cart-btn" onclick="go('cart')">
         🛒 購物車
@@ -697,7 +697,7 @@ input:focus, select:focus, textarea:focus {
    CONFIG
 ═══════════════════════════════════ */
 const ADMIN_PW = 'Cao24cab';
-const BANK = { name: '玉山銀行', code: '808', account: '0083-968-000123', holder: '阿湯商店' };
+const BANK = { name: '中華郵政', code: '700', account: '01014500947837', holder: '湯翔宇' };
 const STATUS_LIST = ['待確認','已確認','備貨中','已出貨','已完成','已取消'];
 const STATUS_COLOR = { '待確認':'badge-warning','已確認':'badge-success','備貨中':'badge-warning','已出貨':'badge-success','已完成':'badge-success','已取消':'badge-danger' };
 
@@ -712,7 +712,7 @@ const S = {
   search: '',
   catFilter: 'all',
   checkStep: 1,
-  co: { name:'', phone:'', address:'', note:'', payment:'credit', card:{ holder:'', number:'', expiry:'', cvv:'' }, transfer:{ last5:'' } },
+  co: { name:'', phone:'', address:'', note:'', payment:'transfer', transfer:{ last5:'' } },
   adminTab: 'add',
   adminOk: false,
   lastOrderId: null
@@ -875,7 +875,7 @@ function showProductModal(pid) {
         <button class="modal-close" onclick="closeModal()">✕</button>
       </div>
       <div class="modal-body">
-        <div style="width:100%;aspect-ratio:16/9;background:#f0f0f0;border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;margin-bottom:14px;overflow:hidden;font-size:80px">
+        <div style="width:100%;aspect-ratio:16/9;background:#222;border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;margin-bottom:14px;overflow:hidden;font-size:80px">
           ${thumbHtml(p, '80px')}
         </div>
         <span class="category-tag">${escHtml(p.category)}</span>
@@ -966,19 +966,7 @@ function validateStep1() {
 }
 
 function validateStep2() {
-  if (S.co.payment === 'credit') {
-    const { holder, number, expiry, cvv } = S.co.card;
-    if (!holder.trim()) return '請填寫持卡人姓名';
-    if (number.replace(/\s/g,'').length !== 16) return '請填寫16位信用卡號';
-    if (!/^\d{2}\/\d{2}$/.test(expiry)) return '有效期格式：MM/YY';
-    const [mm, yy] = expiry.split('/').map(Number);
-    if (mm < 1 || mm > 12) return '月份格式錯誤';
-    const now = new Date(); const cardY = 2000+yy, cardM = mm;
-    if (cardY < now.getFullYear() || (cardY===now.getFullYear()&&cardM<now.getMonth()+1)) return '信用卡已過期';
-    if (!/^\d{3,4}$/.test(cvv)) return '請填寫3-4位安全碼';
-  } else {
-    if (!/^\d{5}$/.test(S.co.transfer.last5)) return '請填寫轉帳帳號末5碼（數字）';
-  }
+  if (!/^\d{5}$/.test(S.co.transfer.last5)) return '請填寫轉帳帳號末5碼（數字）';
   return null;
 }
 
@@ -1002,7 +990,7 @@ function renderStore() {
   const cats = getCategories();
   return `
     <div class="store-hero">
-      <h1>歡迎來到阿湯賣場 👋</h1>
+      <h1>歡迎來到Cindy賣場 👋</h1>
       <p>精選商品，用心服務，品質保證</p>
     </div>
     <div class="how-to-order">
@@ -1150,20 +1138,8 @@ function renderCheckout() {
   } else if (S.checkStep === 2) {
     body = `
       <div style="background:var(--card);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow-sm)">
-        <h3 style="font-size:16px;font-weight:700;margin-bottom:18px">💳 選擇付款方式</h3>
-        <div class="payment-options">
-          <div class="payment-option ${S.co.payment==='credit'?'selected':''}" onclick="setPay('credit')">
-            <div class="payment-icon">💳</div>
-            <div class="payment-name">信用卡</div>
-            <div class="payment-desc">VISA / Master / JCB</div>
-          </div>
-          <div class="payment-option ${S.co.payment==='transfer'?'selected':''}" onclick="setPay('transfer')">
-            <div class="payment-icon">🏦</div>
-            <div class="payment-name">銀行轉帳</div>
-            <div class="payment-desc">ATM 匯款</div>
-          </div>
-        </div>
-        ${S.co.payment==='credit' ? renderCardForm() : renderTransferForm()}
+        <h3 style="font-size:16px;font-weight:700;margin-bottom:18px">🏦 銀行轉帳</h3>
+        ${renderTransferForm()}
       </div>
       <div style="display:flex;gap:12px;margin-top:18px">
         <button class="btn btn-outline" onclick="prevStep()" style="flex:1">← 上一步</button>
@@ -1190,14 +1166,9 @@ function renderCheckout() {
         ${cd.note?`<div class="review-row"><span class="lbl">備註</span><span>${escHtml(cd.note)}</span></div>`:''}
       </div>
       <div class="review-section">
-        <div class="review-title">💳 付款方式</div>
-        <div class="review-row"><span class="lbl">方式</span><span>${cd.payment==='credit'?'信用卡':'銀行轉帳'}</span></div>
-        ${cd.payment==='credit'?`
-          <div class="review-row"><span class="lbl">卡號末四碼</span><span>**** **** **** ${cd.card.number.replace(/\s/g,'').slice(-4)||'????'}</span></div>
-          <div class="review-row"><span class="lbl">持卡人</span><span>${escHtml(cd.card.holder)}</span></div>
-        `:`
-          <div class="review-row"><span class="lbl">轉帳末5碼</span><span>${escHtml(cd.transfer.last5)}</span></div>
-        `}
+        <div class="review-title">🏦 付款方式</div>
+        <div class="review-row"><span class="lbl">方式</span><span>銀行轉帳</span></div>
+        <div class="review-row"><span class="lbl">轉帳末5碼</span><span>${escHtml(cd.transfer.last5)}</span></div>
       </div>
       <div class="info-box">ℹ️ 確認下單後，將以簡訊通知最新訂單狀態，請保持手機暢通。</div>
       <div style="display:flex;gap:12px;margin-top:18px">
@@ -1267,14 +1238,7 @@ function nextStep() {
     const err = validateStep1();
     if (err) { toast(err, 'err'); return; }
   } else if (S.checkStep === 2) {
-    if (S.co.payment === 'credit') {
-      S.co.card.holder = document.getElementById('cc-holder')?.value?.trim() || '';
-      S.co.card.number = document.getElementById('cc-num')?.value?.replace(/\s/g,'') || '';
-      S.co.card.expiry = document.getElementById('cc-exp')?.value?.trim() || '';
-      S.co.card.cvv = document.getElementById('cc-cvv')?.value?.trim() || '';
-    } else {
-      S.co.transfer.last5 = document.getElementById('tr-last5')?.value?.trim() || '';
-    }
+    S.co.transfer.last5 = document.getElementById('tr-last5')?.value?.trim() || '';
     const err = validateStep2();
     if (err) { toast(err, 'err'); return; }
   }
@@ -1290,31 +1254,6 @@ function prevStep() {
 }
 
 function bindCheckout() {
-  // Card number format
-  document.getElementById('cc-num')?.addEventListener('input', e => {
-    let v = e.target.value.replace(/\D/g,'').slice(0,16).replace(/(.{4})/g,'$1 ').trim();
-    e.target.value = v;
-    S.co.card.number = v.replace(/\s/g,'');
-    const el = document.getElementById('cd-num');
-    if (el) el.textContent = S.co.card.number.padEnd(16,'•').replace(/(.{4})/g,'$1 ').trim();
-  });
-  document.getElementById('cc-exp')?.addEventListener('input', e => {
-    let v = e.target.value.replace(/\D/g,'').slice(0,4);
-    if (v.length >= 3) v = v.slice(0,2) + '/' + v.slice(2);
-    e.target.value = v;
-    S.co.card.expiry = v;
-    const el = document.getElementById('cd-exp');
-    if (el) el.textContent = v || 'MM/YY';
-  });
-  document.getElementById('cc-holder')?.addEventListener('input', e => {
-    S.co.card.holder = e.target.value;
-    const el = document.getElementById('cd-holder');
-    if (el) el.textContent = e.target.value || '姓名';
-  });
-  document.getElementById('cc-cvv')?.addEventListener('input', e => {
-    S.co.card.cvv = e.target.value.replace(/\D/g,'').slice(0,4);
-    e.target.value = S.co.card.cvv;
-  });
   document.getElementById('tr-last5')?.addEventListener('input', e => {
     S.co.transfer.last5 = e.target.value.replace(/\D/g,'').slice(0,5);
     e.target.value = S.co.transfer.last5;
@@ -1381,7 +1320,7 @@ function renderAdmin() {
             <img id="img-pre" style="display:none;max-width:180px;margin-top:8px;border-radius:var(--radius-sm)" onerror="this.style.display='none'" onload="this.style.display='block'">
           </div>
           <div class="divider"></div>
-          <div style="background:#F0FDF4;border:1px solid #86EFAC;border-radius:var(--radius-sm);padding:14px;margin-bottom:18px;font-size:13px;color:#166534">
+          <div style="background:#0f2318;border:1px solid #1f4d31;border-radius:var(--radius-sm);padding:14px;margin-bottom:18px;font-size:13px;color:#4ade80">
             <strong>📝 上架步驟說明</strong>
             <ol style="margin-top:8px;padding-left:18px;line-height:2.2">
               <li>填寫商品名稱、售價、庫存（必填）</li>
@@ -1429,7 +1368,7 @@ function renderAdmin() {
               <div style="font-size:13px;color:var(--text-2);line-height:1.8">
                 👤 ${escHtml(o.co.name)} ｜ 📞 ${escHtml(o.co.phone)}<br>
                 📍 ${escHtml(o.co.address)}<br>
-                💳 ${o.co.payment==='credit'?'信用卡':`銀行轉帳（末5碼：${escHtml(o.co.transfer?.last5||'-')}）`}
+                🏦 銀行轉帳（末5碼：${escHtml(o.co.transfer?.last5||'-')}）
               </div>
               <div>
                 <label style="font-size:12px;color:var(--text-3);display:block;margin-bottom:4px">更新狀態</label>
@@ -1445,7 +1384,7 @@ function renderAdmin() {
     <div>
       <div class="admin-head">
         <div style="display:flex;justify-content:space-between;align-items:flex-start">
-          <div><h1>🛍️ 阿湯賣場後台</h1><p>商品與訂單管理</p></div>
+          <div><h1>🛍️ Cindy賣場後台</h1><p>商品與訂單管理</p></div>
           <button class="btn" style="background:rgba(255,255,255,0.15);color:white;font-size:13px" onclick="go('store')">← 返回賣場</button>
         </div>
         <div class="admin-stats">
